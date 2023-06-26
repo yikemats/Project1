@@ -1,7 +1,204 @@
-<head>
-    <title>PUT YOUR TITLE HERE</title>
-<body>
-    <h1>TITLE TITLE</h1>
-<div>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang=”en”>
 
-</div>
+<head>
+    <title>Is Elon Musk Devil or Angel?</title>
+    <style>
+ 
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h4 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .caption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 9pt;
+            float: right;
+        }
+ 
+       .img-container {
+            float: right;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            width: 200px;
+            height:auto;
+        }
+
+        .text-container {
+            max-width: 660px;
+            margin: 0 auto;
+            line-height: 30px;
+        }
+
+        .text-container img {
+            max-width: 100%;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+
+        .top {
+            margin-top: 50px;
+        }
+
+        .bottom {
+            margin-bottom: 50px;
+        }
+
+        ol {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .chart-holder h3 {
+        font-size: small;
+        }
+
+        .chart-holder .subtitle {
+        font-size: 1.2em;
+        }
+
+        .chart-holder .caption {
+        font-size: 0.9;
+        color: grey;
+        text-align: left;
+        }
+
+        .chart{
+          background-color: white;
+          padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class='text-container'>
+    
+        <div>
+            <div class="img-container">
+                <img src="ElonDrawing.jpg" alt="Elon's drawing">
+                <div class='caption'>Y.Ikematsu
+                </div>
+            </div>
+
+            <h1>Is Elon Musk a Devil or an Angel? What I Found by Tracking His Private Jet Like Jack Sweeney</h1>
+
+            <h3>The American media touts that Elon Musk emits too much carbon as a frequent flyer. Is the claim fair?</h3>
+
+            <h4>By Yuka Ikematsu<br>
+                June 25, 2023</h4>
+
+        </div>
+        
+        <div>
+            <p class="top">You know Elon Musk, but do you know who Jack Sweeney is?</p>
+
+            <p class="bottom">As a business magazine reporter from Japan and as someone eager to interview Musk someday, Sweeney has been one of my heroes. He is a college student in Florida who created a tracking system for Musk's private jet and posts where it departed with the estimated arrival location live on his Twitter account named "<a target=_new href="https://twitter.com/elonjetnextday?lang=ja">ElonJet</a>." I depended on his report, and it worked well when I was waiting outside of Twitter HQ in San Francisco for Musk to appear for the whole two weeks of November 2022. Because of Jack, I could know when Musk was in San Francisco (he sometimes went to the Tesla plant instead, though) or elsewhere.
+            </p>
+
+            <div class='chart-holder'>
+                <img src="ElonJet.jpg">
+                <div class='caption'>Musk's main aircraft is <a target=_new href="https://www.gulfstream.com/en/aircraft/gulfstream-g650er/">the Gulfstream G650ER</a>.
+                </div>
+            </div>
+
+            <p class="top">I was so close to catching Musk, always escorted by the giant American bodyguards that there was no way I could pass through, seeing him from outside the glass-walled Twitter entrance. He exited the elevator and walked toward the stairway to the underground parking lot, but the whole thing happened too fast; that was not enough time for me to approach to the glass window to shout, "Hey, Mr. Elon Musk, can I interview you?"</p>
+        
+            <p>With the above anecdote in mind, let’s revisit the topic of Jack Sweeney.</p>
+
+            <p class="bottom">
+                I always wondered how Jack tracks Musk's jet, as he clearly isn't a magician or possess psychic powers. As expected, there was a “trick” behind it. Thanks to Jonathan Soma and everyone else who taught me how to code in Colombia University's Lede Program, now I understand that trick.</p>
+
+        </div>
+
+        <div class="text-container">
+
+            <h2>Welcome to the geek's paradise!</h2>
+
+            <p>The first thing I did was visit the GitHub site and check out Jack's code for his ElonJet account. GitHub is a cloud-based service where developers store and manage their codes. The best feature of GitHub is that the code is open to anyone. Welcome to the geek's paradise!</p>
+
+            <p>By the way, Musk suspended the original ElonJet account in December 2022, accusing it violated Twitter rules by revealing his live location. So now its name is "ElonJet but Delayed," with the same information provided more than 24 hours later. After acquiring Twitter, Musk is now "Genie," where he can do whatever he wants (not only three but more!).</p>
+
+            <p>My intention was to create a bot to be my own "personal psychic," but I admit. It was too advanced for me (just yet!) to understand precisely what Jack did. So I quickly changed my goal to analyzing Musk's past flights and see if there were any findings such as carbon footprints. I searched for flight data and found a non-profit community-based network continuously collects air traffic surveillance data known as "OpenSky Network." Looking into its API, I successfully tracked Musk's jet (he owns 3 private jets, but I picked the primary one) and created a dataset for the first quarter of 2023 to answer my following questions:</p>
+
+            <ol>
+                <h3>Questions:</h3>
+                <li>What are the aircraft's carbon footprints for the period?</li>
+                <li>Where did he go, and were the trips for “business or pleasure”?</li>
+            </ol>
+
+            <h3 class="top">Finding 1: His footprint was not as bad as American media proclaims.</h3>
+
+            <p>"Elon Musk flies private jets more than any other billionaire—releasing over 2,000 tons of carbon emissions in his wake" --- <a target=_new href="https://fortune.com/2023/05/01/elon-musk-private-jet-use-carbon-emissions-climate-change/">Fortune</a></p>
+
+            <p>"Elon Musk's private jet emitted 132 times as much carbon as the average American does in an entire year" --- <a target=_new href="https://www.businessinsider.com/elon-musk-private-jet-carbon-footprint-climate-change-2023-4">Insider</a></p>
+
+            <p class="bottom">"What a horrible person!" you might scream by looking at these headlines. I innitialy felt the same way, but then I thought, "Perhaps, to be fair, we should also consider how much he reduced CO2 by producing electric vehicles (EVs) within a given period."</p>
+
+            <iframe title="Carbon Footprint for Elon Musk's Jet" aria-label="Interactive line chart"
+            id="datawrapper-chart-1nyAa" src="https://datawrapper.dwcdn.net/1nyAa/1/" scrolling="no" frameborder="0"
+            style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe>
+            <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
+            </script>
+
+            <p>According to the data, the total carbon Musk's jet emitted during Q1 2023 was 380 tons. The Tesla's "<a target=_new href="https://www.tesla.com/ns_videos/2022-tesla-impact-report.pdf">Impact Report 2022</a>" shows that grid-charged Model 3 or Y reduces 333 grams per mile, compared to the average premium internal combustion ngine (ICE) vehicle. Considering the average American drives 1200 miles monthly, one Tesla car reduces 1199 kilograms for the quarter.</p>
+
+            <p>Then I looked up how many cars Tesla <a target=_new href="https://ir.tesla.com/press-release/tesla-vehicle-production-deliveries-and-date-financial-results-webcast-first-quarter-2023">produced</a> globally in Q1, which was 440,808 vehicles. The reduction for the same quarter was 528 billion kg, which is "tremendous." Therefore, if you convert Musk's emissions into Tesla car production, he offsets his carbon footprint after producing a mere 317 EVs.</p>
+
+            <p>On that note, Musk is not that horrible. Not as much as most of the American media make him out to be.</p>
+
+        </div>
+
+        <div class="text-container">
+    
+            <h3 class="top">Finding 2: Strange visit to Rhode Island.</h3>
+
+            <p class="bottom"> "To where did he fly?" Yes, it is a private jet, but if you look at the registration document, its owner is FALCON LANDING, LLC, a SpaceX subsidiary. This aspect of the registration implies that Musk is supposed to use the jet for business purposes, but is that really the case?</p>
+
+            <iframe title="Elon Jet's airport visits in Q1 2023" aria-label="Map" id="datawrapper-chart-GkFnW"
+            src="https://datawrapper.dwcdn.net/GkFnW/2/" scrolling="no" frameborder="0"
+            style="width: 0; min-width: 100% !important; border: none;" height="626" data-external="1"></iframe>
+            <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
+            </script>
+            
+            <p>Counting his visits of airports, departure/arrival as one each, it was significant he visited the San Francisco area where Twitter HQ is the most. Austin was the second-highest visit, home of Tesla's HQ and its famous plant, Giga Texas. Los Angeles is close to SpaceX HQ, Reno is to Giga Nevada. And Washington DC must be when he told House Speaker Kevin McCarthy, "Happy birthday," as reported. Phoenix is likely for work since Tesla plans to build a new battery factory, and Arizona is one of the options.</p>
+
+            <p>Thus far, I hadn't found anything suspicious until I saw Rhode Island appear in the data set. I didn't recall any Tesla or SpaceX facility in Rhode Island, so I asked "Mr. Google" for any connection between Musk and this place.</p>
+
+            <p class="bottom">I first discovered articles about a Rhode Island native, Jennifer Gwynne, who he dated from 1994 to 1995 while attending the University of Pennsylvania. Last summer, she auctioned mementos related to her relationship with him and made $165,000 that she used to pay her stepson's college tuition.It was a lighthearted story, and even Musk gave a thumbs-up to her act, replacing his profile picture on his official Twitter account with one of her pictures on the auction day. In the end, I assumed he was visiting her, but it turned out that I was wrong because Jennifer lives in South Carolina now.</p>
+
+            <h2>Meeting with the satellite engineers at Brown University?</h2>
+
+            <p>Following the Gwynne discovery, another article shed more light on the potential reason for Musk's visit to Rhode Island. The undergrad and graduate student teams at Brown University <a target=_new href="https://engineering.brown.edu/news/2022-05-16/sbudnic-satellite-launch">launched</a> a loaf-sized satellite using SpaceX's Falcon 9 rocket in May 2022. The satellite, SBUDNIK, not Russian Spudnik but an acronym for the students' names, is significant because it reduces the cost from $50 million to $10,000 and shortens the life span from 25 years to 5 years. A shorter life is better for a satellite to reduce the debris in space, where 27,000 of them surrounds the earth already.</p>
+
+            <p>Did Musk visit the team? If so, then why in January 2023, eight months after its launch?</p>
+
+            <p>I don't have the answer at this time, but it's natural for Musk to want to meet the team in person if you think about his well-known Starlink project, which requires a couple of thousands of satellites to cover the everywhere-on-earth internet service.</p>
+
+            <p>As I write this article, Jack Sweeney replied to my direct message on Twitter, "Sure (I will accept your interview)." Although my deadline didn't allow me to include the interview, I know for sure that I already feel connected to my hero.</p>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
